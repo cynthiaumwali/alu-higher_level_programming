@@ -3,4 +3,4 @@ def add(a, b):
     return a + b
 
 if __name__ == "__main__":
-    pass
+    print("{}".format(add(1, 2)))
