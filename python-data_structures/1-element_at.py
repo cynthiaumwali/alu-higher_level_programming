@@ -6,4 +6,4 @@ def element_at(my_list, idx):
         elif idx > 0: 
             print("None")
         else:
-            print("{}".format(my_list[idx]))
+            print("{:d}".format(my_list[idx]))
