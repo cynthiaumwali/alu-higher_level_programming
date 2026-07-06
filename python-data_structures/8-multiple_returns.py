@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     if sentence == "":
-        new_tuple = (None, 0)
-        return new_tuple
+        print("Length: {:d} - First character: {}".format(0, None))
     else:
         words = sentence.split()
         first_word = words[0]
+        first_char = first_word[0]
         length = len(sentence)
-        new_tuple = (first_word, length)
-        return new_tuple
+        print("Length: {:d} - First character: {}".format(length, first_char))
