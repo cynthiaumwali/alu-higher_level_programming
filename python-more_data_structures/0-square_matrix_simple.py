@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     print("[", end="")
-    for row in matrix:
+    for idx, row in matrix:
+        if idx > 0:
+            print(", ", end="")
         print("[", end="")
-        print(", ".join("{:d}".format(i) for i in row, end=""))
+        print(", ".join("{:d}".format(i) for i in row), end="")
         print("]", end="")
-    print("]", end="")
+    print("]")
