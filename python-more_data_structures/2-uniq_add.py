@@ -5,13 +5,11 @@ def uniq_add(my_list=[]):
         temp = my_list[idx]
         occ = 0
         for idxx in range(len(my_list)):
-            if idx == idxx: 
+            if idx == idxx:
                 continue
             else:
                 if my_list[idxx] == temp:
                     occ += 1
-        if occ > 0:
-            continue
-        else:
+        if occ == 0:
             total_sum += my_list[idx]
     return total_sum
