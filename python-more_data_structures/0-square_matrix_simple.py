@@ -5,6 +5,6 @@ def square_matrix_simple(matrix=[]):
         if idx > 0:
             print(", ", end="")
         print("[", end="")
-        print(", ".join("{:d}".format(i) for i in row), end="")
+        print(", ".join("{:d}".format(i**2) for i in row), end="")
         print("]", end="")
     print("]")
