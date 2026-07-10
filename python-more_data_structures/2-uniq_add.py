@@ -10,6 +10,8 @@ def uniq_add(my_list=[]):
             else:
                 if my_list[idxx] == temp:
                     occ += 1
-        if occ == 0:
+        if occ > 0:
+            continue
+        else:
             total_sum += my_list[idx]
     return total_sum
