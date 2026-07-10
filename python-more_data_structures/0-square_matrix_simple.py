@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     print("[", end="")
-    for idx, row in matrix:
+    for idx, row in enumerate(matrix):
         if idx > 0:
             print(", ", end="")
         print("[", end="")
