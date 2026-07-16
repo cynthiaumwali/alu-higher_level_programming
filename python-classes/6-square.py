@@ -12,9 +12,9 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-        if (not isinstance(value, tuple) or len(value) != 2 or
-                not all(isinstance(x, int) for x in value) or
-                not all(x >= 0 for x in value)):
+        if (not isinstance(position, tuple) or len(position) != 2 or
+                not all(isinstance(x, int) for x in position) or
+                not all(x >= 0 for x in position)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
 
