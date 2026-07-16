@@ -36,4 +36,7 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            print("#" * self.__size)
+            count = 1
+            while count <= self.__size:
+                print("#" * self.__size)
+                count += 1
