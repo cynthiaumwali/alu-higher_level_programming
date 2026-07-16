@@ -42,6 +42,7 @@ class Square:
         """Setter: for setting position value"""
         if not isinstance(value, tuple) and all(x > 0 for x in value):
             raise TypeError("position must be a tuple of 2 positive integers")
+	self.__position = value
 
     def my_print(self):
         """Prints square with char #"""
