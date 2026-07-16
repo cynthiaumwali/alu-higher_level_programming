@@ -3,4 +3,3 @@
 
 class Square:
 """Representing a Square"""
-	pass
