@@ -5,10 +5,12 @@
 class Square:
     """Represents a Square"""
 
+    @property
     def size(self):
         """Getter: for retrieving size"""
         return self.__size
 
+    @size.setter
     def size(self, value):
         """Setter: for setting size value"""
         if not isinstance(value, int):
