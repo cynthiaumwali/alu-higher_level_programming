@@ -61,6 +61,6 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         count = 1
-        while(count < self.__height):
+        while(count <= self.__height):
             print('#' * self.__width)
             count += 1
