@@ -4,8 +4,6 @@
 
 class Rectangle:
     """Represents a Rectangle"""
-
-
     @property
     def width(self):
         """Getter: Width"""
