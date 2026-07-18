@@ -66,7 +66,7 @@ class Rectangle:
         rows = []
         count = 1
         while count <= self.__height:
-            rows.append(print_symbol * self.__width)
+            rows.append(self.print_symbol * self.__width)
             count += 1
         return "\n".join(rows)
 
