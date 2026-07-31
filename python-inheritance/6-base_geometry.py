@@ -1,16 +1,10 @@
 #!/usr/bin/python3
-"""Defines class BaseGeometry."""
+"""Defines a base geometry class."""
 
 
 class BaseGeometry:
-    """Represent a base geometry class."""
+    """Represent a base geometry."""
 
-    def __getattr__(self, name):
-        def fallback(*args, **kwargs):
-            raise NotImplementedError(
-                "{name} is not implemented {self.__class__.__name__}.".format(
-                    name=name, self=self
-                )
-            )
-
-        return fallback
+    def area(self):
+        """Raise an Exception; area() must be implemented by subclasses."""
+        raise Exception("area() is not implemented")
